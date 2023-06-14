@@ -1,0 +1,513 @@
+/* RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+/* estilos generales */
+
+.h1i{
+    
+    color: #3243db;
+}
+
+.boton1{
+    color: #04AA6D;
+    margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.p-inicio{
+    color:#3243db;
+}
+body{
+   background-color: aliceblue; 
+}
+
+header{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+ font-size: 700;
+ color: #eceff1; 
+ text-decoration: none;  
+}
+
+.header .nav-links li a:hover{
+    color: antiquewhite;
+}
+
+/* footer estilos */
+
+footer{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: red;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: red;
+}
+.footer-content h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.redes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.redes .icono{
+    cursor: pointer;
+}
+
+.redes .icono:hover{
+transform: scale(1.2);
+}
+
+.redes li{
+    margin: 0 10px;
+    list-style: none;
+}
+.redes .link{
+    text-decoration: none;
+    color: red;
+}
+.redes .link .icono{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+
+.footer-bottom{
+    background: red;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+/* estilos para que el footer quede siempre abajo*/
+
+main {
+min-height: 100vh;
+margin-bottom: -100px;
+}
+
+footer, .push{
+height: 100px;
+}
+
+.bodydy{
+margin: 0;
+background-image: url(../imgs/strawhats.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=enviar] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    padding-right: 0%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=enviar]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style del contenedor/seccion de contacto */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Columnas */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .column, input[type=enviar] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* sobre nosotros, estilos para columnas */
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #4476e2;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .titulo {
+    color: #4476e2;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: red;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* Merchandising estilos y estructura */
+  
+  .Cart-Container{
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+   }
+
+   .CartContainer{
+	width: 70%;
+	height: 90%;
+	background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px #1687d933;
+}
+
+.cabecera-tienda{
+	margin: auto;
+	width: 90%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.encabezamiento{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+}
+
+.Accion{
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+	border-bottom: 1px solid #E44C4C;
+}
+
+.Cart-Items{
+	margin: auto;
+	width: 90%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.imagen-caja{
+	width: 15%;
+	text-align: center;
+}
+.about{
+	height: 100%;
+	width: 24%;
+}
+.title{
+	padding-top: 10px;
+	line-height: 10px;
+	font-size: 32px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.subtitle{
+	line-height: 10px;
+    padding-top: 15px;
+	font-size: 18px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #909090;
+}
+
+.counter{
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+	cursor: pointer;
+}
+.count{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+.precios{
+	height: 100%;
+	text-align: right;
+}
+.amount{
+	padding-top: 20px;
+	font-size: 26px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.guardar{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #1687d9;
+	cursor: pointer;
+}
+.remover{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+}
+
+.pad{
+	margin-top: 5px;
+}
+
+hr{
+	width: 66%;
+	float: right;
+	margin-right: 5%;
+}
+.checkout{
+	float: right;
+	margin-right: 5%;
+	width: 28%;
+}
+.total{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.Subtotal{
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.items{
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.precio-total{
+	font-size: 36px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
+.button{
+	margin-top: 10px;
+	width: 100%;
+	height: 40px;
+	border: none;
+	background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+
+.h12{
+    
+    color: #3243db;
+}
+
+.btn.custom-button {
+  
+  background-color: #ff0000; 
+
+  
+  color: #ffffff; 
+
+  
+  border: none;
+
+  
+  padding: 10px 20px; 
+
+  
+  font-size: 16px; 
+
+  
+  transition: background-color 0.3s ease;
+}
+
+.btn.custom-button:hover {
+  background-color: #ff3333;
+}
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media (max-width: 576px){ 
+  
+  .login-form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
